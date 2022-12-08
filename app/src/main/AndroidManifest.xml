@@ -17,6 +17,8 @@
             android:exported="true"/>
         <activity android:name=".pinactivity.PinActivity"
             android:exported="true"/>
+        <activity android:name=".dynamicinput.DynamicInputActivity"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
