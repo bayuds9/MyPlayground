@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.flowerencee9.myplayground.databinding.ActivityMainBinding
 import com.flowerencee9.myplayground.dynamicinput.DynamicInputActivity
+import com.flowerencee9.myplayground.fr.FRActivity
 import com.flowerencee9.myplayground.nestedrv.NestedRvView
 import com.flowerencee9.myplayground.pinactivity.PinActivity
 import java.util.ArrayList
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                     0 -> startActivity(NestedRvView.newIntent(this@MainActivity))
                     1 -> startActivity(PinActivity.newIntent(this@MainActivity))
                     2 -> startActivity(DynamicInputActivity.newIntent(this@MainActivity))
+                    3 -> startActivity(FRActivity.myIntent(this@MainActivity))
                 }
             }
 
@@ -40,6 +42,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun generateMenu(): ArrayList<String> {
-        return arrayListOf("Nested RV", "PIN", "DYNAMIC INPUT")
+        return arrayListOf("Nested RV", "PIN", "DYNAMIC INPUT", "FACE RECOGNITION by TFLITE - FACENET")
     }
 }
