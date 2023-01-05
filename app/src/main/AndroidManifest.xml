@@ -23,6 +23,8 @@
             android:exported="true"/>
         <activity android:name=".fr.FRActivity"
             android:exported="true"/>
+        <activity android:name=".fr2.FRActivity2"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
