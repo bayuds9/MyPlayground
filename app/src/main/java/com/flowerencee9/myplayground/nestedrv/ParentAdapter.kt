@@ -27,6 +27,7 @@ class ParentAdapter(
             binding.rvChild.apply {
                 adapter = cAdapter
                 layoutManager = LinearLayoutManager(context)
+                setRecycledViewPool(viewPool)
             }
             if (item.child.isNotEmpty()){
                 val duration = 500
