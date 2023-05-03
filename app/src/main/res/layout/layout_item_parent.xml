@@ -10,7 +10,7 @@
         style="?attr/textAppearanceHeadline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        tools:text="TextView"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +30,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:visibility="gone"
+        tools:visibility="visible"
         tools:listitem="@layout/layout_item_child"
         app:layout_constraintTop_toBottomOf="@id/textView3"
         app:layout_constraintBottom_toBottomOf="parent"

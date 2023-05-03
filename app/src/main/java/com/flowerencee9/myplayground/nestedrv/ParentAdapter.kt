@@ -1,19 +1,14 @@
 package com.flowerencee9.myplayground.nestedrv
 
-import android.content.Context
-import android.os.Handler
-import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.postDelayed
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.flowerencee9.myplayground.R
 import com.flowerencee9.myplayground.databinding.LayoutItemParentBinding
 import com.flowerencee9.myplayground.models.ParentModel
 import com.flowerencee9.myplayground.supportclass.animateVisibility
-import java.lang.Long
 
 class ParentAdapter(
     data: ArrayList<ParentModel>
@@ -22,6 +17,7 @@ class ParentAdapter(
     init {
         listParent.addAll(data)
     }
+    private val viewPool = RecyclerView.RecycledViewPool()
 
     inner class VH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(item: ParentModel) = with(itemView) {
